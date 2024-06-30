@@ -4,7 +4,7 @@ def run_tcp_client():
     client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     
     # Define the server's IP address and port
-    server_address = ('192.168.137.200', 1234)
+    server_address = ('192.168.137.200', 7777)
     
     try:
         # Connect to the server
