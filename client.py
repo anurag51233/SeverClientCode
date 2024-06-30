@@ -1,11 +1,11 @@
 import socket
 
 def run_tcp_client():
-    # Create a socket object
-    client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    # Create a socket object with IPv6
+    client_socket = socket.socket(socket.AF_INET6, socket.SOCK_STREAM)
     
-    # Define the server's IP address and port
-    server_address = ('127.0.0.1', 1234)
+    # Define the server's IPv6 address and port
+    server_address = ('[2407:54c0:1b12:ba76:ccc1:5929:3c44:125c]', 7777)
     
     try:
         # Connect to the server
