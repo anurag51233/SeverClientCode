@@ -4,7 +4,7 @@ def run_tcp_server():
     server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     
     # Define the server's IP address and port
-    server_address = ('127.0.0.1', 7777)
+    server_address = ('0.0.0.0', 7777)
     
     # Bind the socket to the server address
     server_socket.bind(server_address)
